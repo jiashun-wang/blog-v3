@@ -37,7 +37,7 @@ catalogs:
     unrun: ^0.3.1
     unplugin-yaml: ^4.2.1
     vue: ^3.5.38
-    vue-router: ^5.1.0
+    vue-router: ^5.0.0
   quality:
     '@antfu/eslint-config': ^9.0.0
     '@nuxt/a11y': 1.0.0-alpha.1
