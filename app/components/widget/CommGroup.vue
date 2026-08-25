@@ -3,16 +3,16 @@
 	card
 	dim
 	title="博客/技术社区"
-	bg-img="https://p.qlogo.cn/gh/169994096/169994096/100/"
+	bg-img="https://cdn.chum-bucket.site/image/20250419-190816-651.webp"
 	bg-aside
 >
 	<div class="title text-creative">
-		纸网接入点
+		QQ群
 	</div>
 
 	<Tip copy icon :tip-options="{ placement: 'left' }">
 		<Icon name="ri:qq-fill" />
-		<span>169994096</span>
+		<span>198710392</span>
 	</Tip>
 </BlogWidget>
 </template>

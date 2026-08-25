@@ -10,7 +10,8 @@ const appConfig = useAppConfig()
 			<menu>
 				<li v-for="(item, itemIndex) in group.items" :key="itemIndex">
 					<UtilLink :to="item.url">
-						<Icon :name="item.icon" />
+						<img v-if="item.icon.startsWith('http')" :src="item.icon" alt="" class="icon-img">
+						<Icon v-else :name="item.icon" />
 						<span class="nav-text">{{ item.text }}</span>
 					</UtilLink>
 				</li>
@@ -26,6 +27,13 @@ const appConfig = useAppConfig()
 	margin: 3rem 1rem;
 	font-size: 0.9em;
 	color: var(--c-text-2);
+
+	.icon-img {
+		width: 1.2em;
+		height: 1.2em;
+		vertical-align: -0.25em;
+		flex-shrink: 0;
+	}
 
 	.footer-nav {
 		display: flex;

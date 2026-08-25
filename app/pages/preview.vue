@@ -28,7 +28,7 @@ const { category, categories, listCategorized } = useCategory(listSorted)
 			:categories
 		/>
 	</div>
-	<p>勇敢的人探索世界。这里是一些还未发布的文章。</p>
+	<p>这里是一些还未发布的文章。</p>
 
 	<menu class="proper-height">
 		<PostArticle

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { Icon } from '#components'
 import { merge } from 'es-toolkit/object'
 import { packageManager, version } from '~~/package.json'
 import pnpmWorkspace from '~~/pnpm-workspace.yaml'
+import { Icon } from '#components'
 
 const appConfig = useAppConfig()
 const { public: { arch, ci, nodeVersion, platform } } = useRuntimeConfig()
@@ -25,7 +25,9 @@ const [pm, pmVersion] = packageManager.split('@') as [string, string]
 
 const service = computed(() => ([
 	...ci ? [{ label: '构建平台', value: ciPlatform }] : [],
-	{ label: '图片存储', value: () => [h(Icon, { name: 'devicon:cloudflare' }), ' R2'] },
+	{ label: '图片存储', value: () => [h('img', { src: 'https://edge0.cc.cd/images/20260826-035220-173.webp', style: 'width:16px;height:16px;vertical-align:middle;margin-right:4px' }), ' OSCA联盟云'] },
+	// { label: '图片存储', value: () => [h(Icon, { name: 'devicon:cloudflare' }), ' R2'] },
+	{ label: 'CDN加速', value: () => [h(Icon, { name: 'devicon:cloudflare' }), ' Cloudflare'] },
 	{ label: '软件协议', value: 'MIT' },
 	{ label: '文章许可', value: appConfig.copyright.abbr },
 	{ label: '规范域名', value: getDomain(appConfig.url) },

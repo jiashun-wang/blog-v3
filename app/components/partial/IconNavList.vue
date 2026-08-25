@@ -15,7 +15,12 @@ defineProps<{
 		:to="url"
 		:aria-label="text"
 	>
-		<Icon :name="icon" />
+		<img
+			v-if="icon.startsWith('http')"
+			:src="icon"
+			alt=""
+		>
+		<Icon v-else :name="icon" />
 	</UtilLink>
 </menu>
 </template>
@@ -37,6 +42,13 @@ menu {
 		.iconify {
 			display: block;
 		}
+	}
+
+	img {
+		width: 1.2em;
+		height: 1.2em;
+		vertical-align: -0.25em;
+		display: block;
 	}
 }
 </style>
