@@ -91,10 +91,5 @@
     "typescript": "catalog:framework",
     "unplugin-yaml": "catalog:framework",
     "unrun": "catalog:framework"
-  },
-  "pnpm": {
-    "overrides": {
-      "eslint-plugin-command": "3.2.3"
-    }
   }
 }

@@ -7,6 +7,9 @@ allowBuilds:
   unrs-resolver: true
   vue-demi: true
 
+overrides:
+  eslint-plugin-command: 3.2.3
+
 catalogs:
   content:
     '@bikariya/shiki': ^0.0.8
